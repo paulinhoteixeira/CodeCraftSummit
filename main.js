@@ -35,16 +35,32 @@ const getTotalSubscribers = (userData) => {
 
 const showInvite = (userData) => {
   app.innerHTML = `
-     <input type="text" id="link" value="http://evento.com?ref=${userData.ref}" disabled>
+      <main>
+        <h3>Inscrição confirmada</h3>
 
-      <div id="stats">
-        <h4>
-          ${getTotalSubscribers(userData)}
-        </h4>
-        <p>Inscrições feitas</p>
-      </div>
+        <p>
+          Convide mais pessoas e concorra a prêmios! <br/>
+          Compartilhe o link e acompanhe as inscrições:
+        </p>
+
+        <div class="input-group">
+          <label for="link">
+            <img src="link.svg" alt="Link icon">
+          </label>
+          <input type="text" id="link" value="http://evento.com?ref=${userData.ref}" disabled>
+        </div>
+      </main>
+
+      <section class="stats">
+        <h4>${getTotalSubscribers(userData)}</h4>
+        <p>
+          Inscrições feitas
+        </p>
+      </section>
 
   `
+
+  updateImageLinks()
 }
 
 const saveUser = (userData) => {
