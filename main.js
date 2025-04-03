@@ -112,8 +112,8 @@ const startApp = () => {
             <h2>Sobre o evento</h2>
             <span class="badge">AO VIVO</span>
 
+            </div>
             <p>Um evento feito por e para pessoas desenvolvedoras apaixonadas por criar soluções inovadoras e compartilhar conhecimento. Vamos mergulhar nas tendências mais recentes em desenvolvimento de software, arquitetura de sistemas e tecnologias emergentes, com palestras, workshops e hackatons. <br/> <br/> Dias 15 a 17 de março | Das 18h às 21h | Online e Gratuito</p>
-          </div>
         </section>
 
         <section class="registration">
