@@ -16,7 +16,7 @@ const users = [
     email: 'tost@tost.com',
     phone: '999999999',
     ref: 300,
-    refBy: 200
+    refBy: 100
   }
 ];
 
@@ -59,7 +59,7 @@ const showInvite = (userData) => {
       </section>
 
   `
-
+  app.setAttribute('class', 'page-invite')
   updateImageLinks()
 }
 
@@ -148,10 +148,11 @@ const startApp = () => {
   `
 
   app.innerHTML = content
+  app.setAttribute('class', 'page-start')
   updateImageLinks()
   formAction()
 }
 
 startApp()
 
-document.getElementById("logo").onclick = () => startApp()
+document.querySelector("header").onclick = () => startApp()
